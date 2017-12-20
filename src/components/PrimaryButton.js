@@ -4,7 +4,26 @@ import { connect } from 'react-redux';
 
 import './PrimaryButton.css';
 
-export const PrimaryButton = ({
+/**
+ * ### Primary button component
+ *
+ * Example use:
+ *
+ * ```js
+ * import React from 'react'
+ * import PrimaryButton from
+ *   'react-storybook-connect-example/src/components/PrimaryButton'
+ *
+ * const Example = () => (
+ *   &lt;PrimaryButton
+ *     onPress={() => console.log('Pressed!')}
+ *   >
+ *     Primary Button
+ *   &lt;/PrimaryButton>
+ * );
+ * ```
+ */
+const PrimaryButton = ({
   __buttonPressCount,
   __primaryBackgroundColor,
   __primaryBackgroundColorDisabled,
@@ -45,9 +64,16 @@ PrimaryButton.defaultProps = {
 };
 
 PrimaryButton.propTypes = {
+  /** Button text or child elements */
   children: PropTypes.node.isRequired,
+
+  /** Whether button is disabled */
   disabled: PropTypes.bool,
+
+  /** Custom button CSS */
   style: PropTypes.object,
+
+  /** Button's type */
   type: PropTypes.oneOf(['button', 'submit']),
 };
 
