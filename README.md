@@ -1,3 +1,11 @@
+# React Storybook Connect Example
+
+Example project for react-redux `connect`-ed components in Storybook:
+
+![sample screenshot](img/storybook-info-screenshot.jpg)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
