@@ -3,18 +3,18 @@ import { STYLE_TOGGLE } from '../actions';
 const getStyle = (isToggled) => {
   if (isToggled) {
     return {
-      __primaryBackgroundColor: '#3166f1',
-      __primaryBackgroundColorDisabled: '#479bfe',
-      __primaryColor: '#ffffff',
-      __primaryColorDisabled: '#a9d0fa'
+      __primaryBackgroundColor: 'black',
+      __primaryBackgroundColorDisabled: 'gray',
+      __primaryColor: 'white',
+      __primaryColorDisabled: 'gainsboro'
     };
   }
-
+  
   return {
-    __primaryBackgroundColor: 'black',
-    __primaryBackgroundColorDisabled: 'gray',
-    __primaryColor: 'white',
-    __primaryColorDisabled: 'gainsboro'
+    __primaryBackgroundColor: '#3166f1',
+    __primaryBackgroundColorDisabled: '#479bfe',
+    __primaryColor: '#ffffff',
+    __primaryColorDisabled: '#a9d0fa'
   };
 };
 
